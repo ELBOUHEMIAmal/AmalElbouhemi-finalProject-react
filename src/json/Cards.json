@@ -1,0 +1,26 @@
+[
+    {
+         "image": "cards1",
+    "buttonText": "DRESSES"
+    },
+    {
+         "image": "cards2",
+    "buttonText": "WATCHES"
+    },
+    {
+         "image": "cards3",
+    "buttonText": "SUNGLASSES"
+    },
+    {
+         "image": "cards4",
+    "buttonText": "FOOTERWEAR"
+    },
+    {
+         "image": "cards5",
+    "buttonText": "BAGS"
+    },
+    {
+         "image": "cards6",
+    "buttonText": "ACCESSORIES"
+    }
+]

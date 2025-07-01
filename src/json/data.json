@@ -1,0 +1,26 @@
+ [
+    {
+      "id": 1,
+   "title": "Summer Collection 2024",
+      "subtitle": "Discover the latest trends",
+      "image": "carousel1",
+      "buttonText": "Shop Now",
+      "backgroundColor": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    },
+    {
+      "id": 2,
+       "title": "Exclusive Deals",
+      "subtitle": "Up to 50% off selected items",
+      "image": "carousel2",
+      "buttonText": "Get Deals",
+      "backgroundColor": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+    },
+    {
+      "id": 3,
+       "title": "New Arrivals",
+      "subtitle": "Fresh styles just in",
+      "image": "carousel3",
+      "buttonText": "Explore",
+      "backgroundColor": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
+    }
+  ]
