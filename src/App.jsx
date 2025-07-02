@@ -11,12 +11,15 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import ProductDetails from './pages/ProductDetails'
+import { CartProvider } from './context/index'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <CartProvider>
+
     <Navbar />
     <Routes>
         <Route path="/" element={<Home />}/>
@@ -29,6 +32,7 @@ function App() {
         <Route path="/details/:id" element={<ProductDetails />}/>
       </Routes>
     <Footer/>
+      </CartProvider>
     </>
   )
 }

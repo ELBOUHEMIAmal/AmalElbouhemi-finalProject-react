@@ -5,9 +5,11 @@ import { CiShoppingCart } from "react-icons/ci";
 import { FaRegUserCircle } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
 import { MdOutlineClose } from "react-icons/md";
+import { useCart } from '../context/index';
 import { Link } from "react-router";
 
 const Navbar = () => {
+   const { cartCount } = useCart();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -83,10 +85,14 @@ const Navbar = () => {
             <div className="relative">
               <button className="p-1 md:p-2 hover:bg-gray-100 rounded-full transition-colors">
                 <CiShoppingCart/>
-              </button>
               <span className="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full w-4 h-4 md:w-5 md:h-5 flex items-center justify-center">
-                2
+                {cartCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-medium">
+                  {cartCount}
+                </span>
+              )}
               </span>
+              </button>
             </div>
             
             {/* More menu button for very small screens */}
