@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "blog01",
+    "title": "Black Friday Guide: Best Sales & Discount Codes",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
+  },
+  {
+    "id": 2,
+    "image": "blog02",
+    "title": "Black Friday Guide: Best Sales & Discount Codes",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
+  },
+  {
+    "id": 3,
+    "image": "blog03",
+    "title": "Black Friday Guide: Best Sales & Discount Codes",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
+  }
+]

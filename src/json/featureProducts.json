@@ -1,58 +1,88 @@
+
 [
   {
     "id": 1,
+    "title": "Boxy6 T-Shirt with Roll Sleeve",
+    "price": 17.07,
+    "originalPrice": 25.00,
     "image": "shopi2",
-    "title": "Product 1",
-    "description": "This is product 1 description.",
-    "price": "$19.99",
-    "buttonText": "ADD TO CART"
+    "rating": 4.5,
+    "reviews": 24,
+    "sale": true,
+    "colors": ["#000", "#fff",
+    "#ff6b6b"],
+    "buttonText": "ADD TO CART",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
   },
   {
     "id": 2,
+    "title": "Classic White Sneakers",
+    "price": 89.99,
     "image": "shopy3",
-    "title": "Product 2",
-    "description": "This is product 2 description.",
-    "price": "$24.99",
-    "buttonText": "ADD TO CART"
+    "rating": 4.8,
+    "reviews": 156,
+    "sale": false,
+    "colors": ["#fff", "#000",
+   "#333"],
+    "buttonText": "ADD TO CART",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
   },
   {
     "id": 3,
+    "title": "Vintage Leather Bag",
+    "price": 145.50,
     "image": "shopy4",
-    "title": "Product 3",
-    "description": "This is product 3 description.",
-    "price": "$29.99",
-    "buttonText": "ADD TO CART"
+    "rating": 4.7,
+    "reviews": 89,
+    "sale": false,
+    "colors": ["#8B4513", "#000", "#654321"],
+    "buttonText": "ADD TO CART",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
   },
   {
     "id": 4,
+    "title": "Summer Floral Dress",
+    "price": 78.90,
+    "originalPrice": 120.00,
     "image": "shopy5",
-    "title": "Product 4",
-    "description": "This is product 4 description.",
-    "price": "$34.99",
-    "buttonText": "ADD TO CART"
+    "rating": 4.6,
+    "reviews": 67,
+    "sale": true,
+    "colors": ["#ff69b4", "#fff", "#ffb6c1"],
+    "buttonText": "ADD TO CART",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
   },
   {
     "id": 5,
+    "title": "Black Frame Sunglasses",
+    "price": 125.00,
     "image": "shopy6",
-    "title": "Product 5",
-    "description": "This is product 5 description.",
-    "price": "$39.99",
-    "buttonText": "ADD TO CART"
+    "rating": 4.4,
+    "reviews": 34,
+    "sale": false,
+    "colors": ["#000", "#333",
+    "#666"],
+    "buttonText": "ADD TO CART",
+    "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
   },
   {
     "id": 6,
+    "title": "Casual Watch Collection",
+    "price": 199.99,
+    "originalPrice": 280.00,
     "image": "shopy7",
-    "title": "Product 6",
-    "description": "This is product 6 description.",
-    "price": "$44.99",
-    "buttonText": "ADD TO CART"
-  },
-  {
-    "id": 7,
-    "image": "shopy8",
-    "title": "Product 7",
-    "description": "This is product 7 description.",
-    "price": "$49.99",
-    "buttonText": "ADD TO CART"
+    "rating": 4.9,
+    "reviews": 203,
+    "sale": true,
+    "colors": ["#000", "#c0c0c0", "#ffd700"],
+        "buttonText": "ADD TO CART",
+        "author": "by fashe-theme Admin on Dec 28,2017",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..."
+
   }
 ]
