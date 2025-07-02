@@ -5,8 +5,12 @@ import dataCarousel from "../json/data.json";
 import dataCards from "../json/Cards.json";
 import dataProductsFeatures from "../json/featureProducts.json";
 import dataBlog from '../json/blog.json'
+import { useNavigate } from "react-router-dom";
+
 
 const Home = () => {
+      const n = useNavigate();
+  
   // import dataCarousel from "../data/data.json"; // adjust path if needed
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -165,7 +169,7 @@ const Home = () => {
                   <img
                     src={images[card.image]}
                     alt={card.buttonText}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110  " onClick={()=> n('/shop/' + card.id)}
                   />
 
                   {/* Overlay gradient */}
@@ -323,7 +327,7 @@ const Home = () => {
                 <img
                   src={images.shopItem09}
                   alt="Sunglasses"
-                  className="w-full h-48 object-contain hover:"
+                  className="w-full h-48 object-contain transition-transform duration-300 ease-in-out transform hover:scale-105"
                 />
               </div>
               

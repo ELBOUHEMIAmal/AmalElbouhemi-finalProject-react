@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { RiFacebookFill } from "react-icons/ri";
 import { FaGooglePlusG, FaInstagram, FaPinterest, FaTwitter } from "react-icons/fa";
+import { CiShoppingCart } from "react-icons/ci";
+import { FaRegUserCircle } from "react-icons/fa";
+import { CiMenuBurger } from "react-icons/ci";
+import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -36,7 +40,7 @@ const Navbar = () => {
       </div>
 
       {/* Main navbar */}
-      <div className="px-4 md:px-6 py-4  ">
+      <div className="px-4 md:px-6 py-4  fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
@@ -74,15 +78,11 @@ const Navbar = () => {
           {/* Right side icons */}
           <div className="flex items-center space-x-2 md:space-x-4">
             <button className="p-1 md:p-2 hover:bg-gray-100 rounded-full transition-colors">
-              <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
+              <FaRegUserCircle/>
             </button>
             <div className="relative">
               <button className="p-1 md:p-2 hover:bg-gray-100 rounded-full transition-colors">
-                <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m4.5-5a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                </svg>
+                <CiShoppingCart/>
               </button>
               <span className="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full w-4 h-4 md:w-5 md:h-5 flex items-center justify-center">
                 2
@@ -95,13 +95,10 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? (
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <MdOutlineClose />
               ) : (
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                <CiMenuBurger/>
+
               )}
             </button>
           </div>

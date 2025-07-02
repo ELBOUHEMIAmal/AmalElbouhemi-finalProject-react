@@ -5,13 +5,22 @@ import { AiOutlineShoppingCart, AiFillStar, AiOutlineStar } from 'react-icons/ai
 import { BiFilter, BiGridAlt } from 'react-icons/bi';
 import { FiList } from 'react-icons/fi';
 import images from "../constants/images";
+import {  useParams, useNavigate } from "react-router-dom";
+
 
 
 const Shop = () => {
-    
+        const n = useNavigate();
+        const { id } = useParams();
+    const shop = dataProductsFeatures.find((e) => e.id == id);
+
       const [viewMode, setViewMode] = useState('grid');
   const [sortBy, setSortBy] = useState('featured');
   const [currentPage, setCurrentPage] = useState(1);
+   const [cartItems, setCartItems] = useState([]);
+  const [cartCount, setCartCount] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [addedItems, setAddedItems] = useState(new Set());
 
 
 
@@ -30,27 +39,41 @@ const Shop = () => {
       )}
 
       {/* Product Image */}
-      <div className="relative overflow-hidden ">
+      <div className="relative overflow-hidden "  >
         <img
           src={images[product.image]}
           alt={product.name}
-          className="w-full h-90 object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-90 object-cover transition-transform duration-500 group-hover:scale-105" onClick={()=> n('/details/' + product.id)}
         />
         
         
 
         {/* Add to Cart Overlay */}
         <div className="absolute bottom-0 left-0 right-0 bg-black/80 text-white p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <button className="w-full flex items-center justify-center space-x-2 hover:bg-white/20 py-2 rounded transition-colors">
-            <AiOutlineShoppingCart className="w-4 h-4" />
-            <span className="text-sm font-medium">Add to Cart</span>
-          </button>
+          <button
+                        onClick={() => addToCart(product)}
+                        disabled={addedItems.has(product.id)}
+                        className={`w-full py-2 px-4 rounded font-semibold transition-all duration-200 ${
+                          addedItems.has(product.id)
+                            ? 'bg-green-500 text-white'
+                            : 'bg-gray-800 text-white hover:bg-gray-700'
+                        }`}
+                      >
+                        {addedItems.has(product.id) ? (
+                          <span className="flex items-center justify-center">
+                            <Check size={16} className="mr-2" />
+                            Added to Cart!
+                          </span>
+                        ) : (
+                          '🛒 Add to Cart'
+                        )}
+                      </button>
         </div>
       </div>
 
       {/* Product Info */}
       <div className="p-4">
-        <h3 className="font-medium text-gray-900 mb-2 line-clamp-2 hover:text-[#e65540]">{product.title}</h3>
+        <h3 className="font-medium text-gray-900 mb-2 line-clamp-2 hover:text-[#e65540]"  onClick={()=> n('/details/' + product.id)}>{product.title}</h3>
         
      
         {/* Price */}
